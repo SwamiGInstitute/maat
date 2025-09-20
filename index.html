@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#0e0b12" />
-  <meta name="color-scheme" content="dark" />
+  <meta name="theme-color" content="#ede6f5" />
+  <meta name="color-scheme" content="light" />
   <title>Queen Mother Maat — Priestess of Ọya | Khemetian Yoga, Breathwork & Guided Meditations</title>
   <meta name="description" content="Queen Mother Maat — Priestess of Ọya. Khemetian Yoga instructor offering guided breathing, meditation, and spiritual alignment sessions. Serving in-person and virtual communities. Email: iya@queenmothermaat.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,37 +12,37 @@
 
   <!-- Open Graph -->
   <meta property="og:title" content="Queen Mother Maat — Priestess of Ọya" />
-  <meta property="og:description" content=" Khemetian Yoga • Guided Breathwork • Meditations • Spiritual Alignment" />
+  <meta property="og:description" content="Khemetian Yoga • Guided Breathwork • Meditations • Spiritual Alignment" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://queenmothermaat.com/" />
   <meta property="og:image" content="https://queenmothermaat.com/og-image.jpg" />
 
   <style>
     :root{
-      --bg:#0e0b12;
-      --panel:#15111d;
-      --ink:#f0eef6;
-      --muted:#bdb7ca;
-      --accent:#b86cff;           /* royal amethyst */
-      --accent-soft:rgba(184,108,255,.16);
-      --oya:#ff3b6b;              /* Ọya wind / crimson */
-      --gold:#ffc861;             /* seal/gold accent */
+      --bg:#f8f3f7;                 /* light lavender-beige */
+      --panel:#fffaf8;              /* feminine warm off-white */
+      --ink:#3a2d3d;                /* dark plum for text */
+      --muted:#7d677d;              /* muted mauve */
+      --accent:#9b59b6;             /* amethyst purple */
+      --accent-soft:rgba(155,89,182,.15);
+      --oya:#d35473;                /* rose-crimson */
+      --gold:#c49a6c;               /* soft antique gold */
       --radius:22px;
-      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --shadow:0 6px 18px rgba(74,30,84,.15);
     }
     *{box-sizing:border-box}
     html,body{scroll-behavior:smooth}
     body{
       margin:0;
       background:
-        radial-gradient(1200px 600px at 10% -10%, rgba(184,108,255,.15), transparent 60%),
-        radial-gradient(1000px 500px at 110% 0%, rgba(255,59,107,.12), transparent 55%),
+        radial-gradient(1200px 600px at 10% -10%, rgba(155,89,182,.18), transparent 60%),
+        radial-gradient(1000px 500px at 110% 0%, rgba(211,84,115,.12), transparent 55%),
         var(--bg);
       color:var(--ink);
       font:400 16px/1.6 Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
       letter-spacing:.2px;
     }
-    h1,h2,h3{font-family:"Libre Baskerville", Georgia, serif; margin:0 0 .6rem}
+    h1,h2,h3{font-family:"Libre Baskerville", Georgia, serif; margin:0 0 .6rem; color:var(--ink)}
     h1{font-size: clamp(30px, 4.8vw, 54px); line-height:1.15}
     h2{font-size: clamp(22px, 3vw, 34px)}
     h3{font-size: clamp(18px, 2.1vw, 22px)}
@@ -57,8 +57,8 @@
     }
     @media (max-width: 900px){ .hero{grid-template-columns: 1fr} }
     .card{
-      background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.00)) , var(--panel);
-      border:1px solid rgba(255,255,255,.06);
+      background: linear-gradient(180deg, rgba(255,255,255,.9), rgba(255,255,255,.85)) , var(--panel);
+      border:1px solid rgba(155,89,182,.15);
       box-shadow: var(--shadow);
       border-radius: var(--radius);
       padding: clamp(18px, 3.2vw, 28px);
@@ -67,48 +67,47 @@
       display:inline-flex; align-items:center; gap:.5rem;
       padding:.4rem .8rem; border-radius:999px;
       background:var(--accent-soft); color:var(--ink); font-weight:600; font-size:.9rem;
-      border:1px solid rgba(184,108,255,.35);
+      border:1px solid rgba(155,89,182,.35);
     }
     .cta-row{display:flex; gap:12px; flex-wrap:wrap; margin-top:16px}
     .btn{
       display:inline-flex; align-items:center; justify-content:center; gap:.6rem;
       padding:.9rem 1.1rem; border-radius:14px; font-weight:700; letter-spacing:.3px;
-      border:1px solid rgba(255,255,255,.12); backdrop-filter: blur(6px);
+      border:1px solid rgba(155,89,182,.2); backdrop-filter: blur(6px);
       transition: transform .12s ease, box-shadow .12s ease, background-color .12s ease;
       cursor:pointer; text-decoration:none;
     }
-    .btn-primary{background: linear-gradient(180deg, var(--accent), #924bff); color:white; border-color: rgba(0,0,0,.2)}
+    .btn-primary{background: linear-gradient(180deg, var(--accent), #7e4798); color:white}
     .btn-primary:hover{transform: translateY(-1px)}
-    .btn-ghost{background:rgba(255,255,255,.06); color:var(--ink)}
+    .btn-ghost{background:rgba(155,89,182,.08); color:var(--ink)}
     .grid{display:grid; gap:18px}
     .g-3{grid-template-columns: repeat(3, 1fr)}
     .g-2{grid-template-columns: repeat(2, 1fr)}
     @media (max-width: 900px){ .g-3,.g-2{grid-template-columns: 1fr} }
     .badge{font-weight:700; color:var(--gold)}
-    .check{color:#74f2c6}
+    .check{color:#7bc8a4}
     .section{padding: 18px 0 10px}
-    .divider{height:1px; background:linear-gradient(90deg, transparent, rgba(255,255,255,.12), transparent); margin:32px 0}
+    .divider{height:1px; background:linear-gradient(90deg, transparent, rgba(155,89,182,.25), transparent); margin:32px 0}
     .logo{
       width:82px; height:82px; border-radius:50%;
-      background: radial-gradient(60% 60% at 40% 35%, rgba(255,255,255,.25), rgba(255,255,255,.05)),
-                  linear-gradient(135deg, var(--gold), #b8892b);
-      box-shadow:0 10px 30px rgba(255,200,97,.18);
-      display:grid; place-items:center; color:#442d00; font-weight:900;
+      background: radial-gradient(60% 60% at 40% 35%, rgba(255,255,255,.6), rgba(255,255,255,.2)),
+                  linear-gradient(135deg, var(--gold), #a37548);
+      box-shadow:0 6px 16px rgba(196,154,108,.3);
+      display:grid; place-items:center; color:#4d3423; font-weight:900;
       text-transform:uppercase; letter-spacing:1px; user-select:none;
     }
     .portrait{
       aspect-ratio: 5/6; width:100%; border-radius: var(--radius);
-      object-fit: cover; border:1px solid rgba(255,255,255,.08)
+      object-fit: cover; border:1px solid rgba(155,89,182,.15)
     }
     .list{margin:0; padding-left:1.1rem}
     footer{padding:28px 0 40px; color:var(--muted); font-size:.95rem}
     .tiny{font-size:.9rem; color:var(--muted)}
     .cert{
-      background: #120e19; border:1px dashed rgba(184,108,255,.35);
+      background: #fff9f5; border:1px dashed rgba(155,89,182,.35);
       border-radius: 16px; padding:12px
     }
-    /* subtle pulse for CTA */
-    @keyframes breathe { 0%{box-shadow:0 0 0 0 rgba(184,108,255,.35)} 70%{box-shadow:0 0 0 18px rgba(184,108,255,0)} 100%{box-shadow:0 0 0 0 rgba(184,108,255,0)} }
+    @keyframes breathe { 0%{box-shadow:0 0 0 0 rgba(155,89,182,.35)} 70%{box-shadow:0 0 0 18px rgba(155,89,182,0)} 100%{box-shadow:0 0 0 0 rgba(155,89,182,0)} }
     .pulse{animation: breathe 2.8s ease-in-out infinite}
   </style>
 
@@ -153,7 +152,7 @@
       <div class="card">
         <span class="pill">Priestess of Ọya • Spiritual Winds, Change & Courage</span>
         <h1>Embodied Breath. Ancient Rhythm. <span style="color:var(--oya)">Ọya</span> at your back.</h1>
-        <p>Queen Mother Maat is a <strong>   Khemetian Yoga</strong> instructor and <strong>Priestess of Ọya</strong>, guiding clients through breath, movement, and deep meditation to clear stagnation and align purpose. Private, group, and ceremonial sessions offered virtually and in person.</p>
+        <p>Queen Mother Maat is a <strong>Khemetian Yoga</strong> instructor and <strong>Priestess of Ọya</strong>, guiding clients through breath, movement, and deep meditation to clear stagnation and align purpose. Private, group, and ceremonial sessions offered virtually and in person.</p>
         <div class="cta-row">
           <a class="btn btn-primary" href="mailto:iya@queenmothermaat.com?subject=Booking%20Inquiry&body=Name%3A%0APreferred%20date%2Ftime%3A%0ATimezone%3A%0ASession%20type%3A">Book Breathwork</a>
           <a class="btn btn-ghost" href="#offerings">See Offerings</a>
@@ -162,7 +161,6 @@
       </div>
 
       <div class="card">
-        <!-- Replace with a real portrait if desired -->
         <img class="portrait" src="https://queenmothermaat.com/images/portrait.jpg" alt="Queen Mother Maat — Priestess of Ọya" />
         <p class="tiny" style="margin-top:8px; text-align:center">“When the breath remembers, the body follows.”</p>
       </div>
@@ -216,7 +214,7 @@
           <ul class="list">
             <li><strong>Degrees & Certifications</strong> in natural health and integrative nutrition.</li>
             <li><strong>Commission on Certification (AADP)</strong> recognition.</li>
-              <strong>Khemtian</strong> Yoga Instructor</strong> with years of teaching for breath, posture, and energetic alignment.</li>
+            <li><strong>Khemetian Yoga Instructor</strong> with years of teaching for breath, posture, and energetic alignment.</li>
           </ul>
           <p class="tiny">*Full certificate images available below.</p>
         </div>
@@ -233,7 +231,6 @@
       </div>
 
       <div class="grid g-3" style="margin-top:16px">
-        <!-- Replace src values with your real hosted certificate image URLs -->
         <figure class="cert">
           <img src="https://queenmothermaat.com/images/cert-integrative-nutrition.jpg" alt="Institute for Integrative Nutrition certificate" style="width:100%; border-radius:10px">
           <figcaption class="tiny" style="margin-top:6px">Institute for Integrative Nutrition — Health Coach</figcaption>
@@ -278,13 +275,13 @@
           <!-- Simple mailto form (no backend required). For full forms, connect to Netlify/Formspree/etc. -->
           <form action="mailto:iya@queenmothermaat.com" method="post" enctype="text/plain">
             <label>Name<br>
-              <input required name="Name" type="text" style="width:100%; padding:.8rem; border-radius:12px; background:#0f0c16; border:1px solid rgba(255,255,255,.1); color:var(--ink)">
+              <input required name="Name" type="text" style="width:100%; padding:.8rem; border-radius:12px; background:#fff9f5; border:1px solid rgba(155,89,182,.25); color:var(--ink)">
             </label><br><br>
             <label>Email<br>
-              <input required name="Email" type="email" style="width:100%; padding:.8rem; border-radius:12px; background:#0f0c16; border:1px solid rgba(255,255,255,.1); color:var(--ink)">
+              <input required name="Email" type="email" style="width:100%; padding:.8rem; border-radius:12px; background:#fff9f5; border:1px solid rgba(155,89,182,.25); color:var(--ink)">
             </label><br><br>
             <label>Message<br>
-              <textarea required name="Message" rows="5" style="width:100%; padding:.8rem; border-radius:12px; background:#0f0c16; border:1px solid rgba(255,255,255,.1); color:var(--ink)"></textarea>
+              <textarea required name="Message" rows="5" style="width:100%; padding:.8rem; border-radius:12px; background:#fff9f5; border:1px solid rgba(155,89,182,.25); color:var(--ink)"></textarea>
             </label><br><br>
             <button class="btn btn-primary" type="submit">Send</button>
           </form>
