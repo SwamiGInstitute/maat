@@ -6,27 +6,20 @@
   <meta name="theme-color" content="#0e0b12" />
   <meta name="color-scheme" content="dark" />
   <title>Queen Mother Maat — Priestess of Ọya | Khemetian Yoga, Breathwork & Guided Meditations</title>
-  <meta name="description" content="Queen Mother Maat — Priestess of Ọya. Khemetian Yoga instructor offering guided breathing, meditation, and spiritual alignment sessions. Serving in-person and virtual communities. Email: iya@queenmothermaat.com" />
+  <meta name="description" content="Queen Mother Maat — Priestess of Ọya. Master Khemetian Yoga instructor offering guided breathing, meditation, and spiritual alignment sessions. Serving in-person and virtual communities. Email: iya@queenmothermaat.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Queen Mother Maat — Priestess of Ọya" />
-  <meta property="og:description" content="Khemetian Yoga • Guided Breathwork • Meditations • Spiritual Alignment" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://queenmothermaat.com/" />
-  <meta property="og:image" content="https://queenmothermaat.com/og-image.jpg" />
-
   <style>
     :root{
-      --bg:#0e0b12;
-      --panel:#15111d;
-      --ink:#f0eef6;
-      --muted:#bdb7ca;
-      --accent:#b86cff;           /* royal amethyst */
-      --accent-soft:rgba(184,108,255,.16);
-      --oya:#ff3b6b;              /* Ọya wind / crimson */
-      --gold:#ffc861;             /* seal/gold accent */
+      --bg:#1a1310;               /* deep earthy brown */
+      --panel:#22191c;            /* panel with slight purple */
+      --ink:#f5f2fa;
+      --muted:#b9aeb7;
+      --accent:#9d6cff;           /* purple accent */
+      --accent-soft:rgba(157,108,255,.18);
+      --oya:#b34d5d;              /* earthy crimson */
+      --gold:#d9b56d;             /* earthy gold accent */
       --radius:22px;
       --shadow:0 10px 30px rgba(0,0,0,.35);
     }
@@ -34,10 +27,12 @@
     html,body{scroll-behavior:smooth}
     body{
       margin:0;
+      /* 🌌 Brown + Purple aurora background */
       background:
-        radial-gradient(1200px 600px at 10% -10%, rgba(184,108,255,.15), transparent 60%),
-        radial-gradient(1000px 500px at 110% 0%, rgba(255,59,107,.12), transparent 55%),
-        var(--bg);
+        radial-gradient(1200px 600px at 15% -10%, rgba(157,108,255,.18), transparent 60%),
+        radial-gradient(1000px 500px at 90% 0%, rgba(139,69,19,.20), transparent 55%),
+        radial-gradient(900px 460px at 50% 100%, rgba(205,133,63,.18), transparent 70%),
+        linear-gradient(180deg, #2a1e24, #1a1310 85%);
       color:var(--ink);
       font:400 16px/1.6 Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
       letter-spacing:.2px;
@@ -57,8 +52,8 @@
     }
     @media (max-width: 900px){ .hero{grid-template-columns: 1fr} }
     .card{
-      background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.00)) , var(--panel);
-      border:1px solid rgba(255,255,255,.06);
+      background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.00)) , var(--panel);
+      border:1px solid rgba(255,255,255,.08);
       box-shadow: var(--shadow);
       border-radius: var(--radius);
       padding: clamp(18px, 3.2vw, 28px);
@@ -66,244 +61,68 @@
     .pill{
       display:inline-flex; align-items:center; gap:.5rem;
       padding:.4rem .8rem; border-radius:999px;
-      background:var(--accent-soft); color:var(--ink); font-weight:600; font-size:.9rem;
-      border:1px solid rgba(184,108,255,.35);
+      background:linear-gradient(180deg, rgba(139,69,19,.25), rgba(157,108,255,.15));
+      color:var(--ink); font-weight:700; font-size:.9rem;
+      border:1px solid rgba(157,108,255,.45);
     }
     .cta-row{display:flex; gap:12px; flex-wrap:wrap; margin-top:16px}
     .btn{
       display:inline-flex; align-items:center; justify-content:center; gap:.6rem;
-      padding:.9rem 1.1rem; border-radius:14px; font-weight:700; letter-spacing:.3px;
+      padding:.9rem 1.1rem; border-radius:14px; font-weight:800; letter-spacing:.3px;
       border:1px solid rgba(255,255,255,.12); backdrop-filter: blur(6px);
       transition: transform .12s ease, box-shadow .12s ease, background-color .12s ease;
       cursor:pointer; text-decoration:none;
     }
-    .btn-primary{background: linear-gradient(180deg, var(--accent), #924bff); color:white; border-color: rgba(0,0,0,.2)}
+    .btn-primary{
+      background: linear-gradient(180deg, #9d6cff, #633b99);
+      color:white;
+      border-color: rgba(0,0,0,.25);
+      box-shadow: 0 10px 22px rgba(157,108,255,.25);
+    }
     .btn-primary:hover{transform: translateY(-1px)}
-    .btn-ghost{background:rgba(255,255,255,.06); color:var(--ink)}
+    .btn-ghost{background:rgba(255,255,255,.07); color:var(--ink)}
     .grid{display:grid; gap:18px}
     .g-3{grid-template-columns: repeat(3, 1fr)}
     .g-2{grid-template-columns: repeat(2, 1fr)}
     @media (max-width: 900px){ .g-3,.g-2{grid-template-columns: 1fr} }
-    .badge{font-weight:700; color:var(--gold)}
-    .check{color:#74f2c6}
+    .badge{font-weight:800; color:var(--gold)}
+    .check{color:#9dffb0}
     .section{padding: 18px 0 10px}
-    .divider{height:1px; background:linear-gradient(90deg, transparent, rgba(255,255,255,.12), transparent); margin:32px 0}
+    .divider{height:1px; background:linear-gradient(90deg, transparent, rgba(255,255,255,.14), transparent); margin:32px 0}
     .logo{
       width:82px; height:82px; border-radius:50%;
-      background: radial-gradient(60% 60% at 40% 35%, rgba(255,255,255,.25), rgba(255,255,255,.05)),
-                  linear-gradient(135deg, var(--gold), #b8892b);
-      box-shadow:0 10px 30px rgba(255,200,97,.18);
+      background:
+        radial-gradient(60% 60% at 40% 35%, rgba(255,255,255,.28), rgba(255,255,255,.08)),
+        linear-gradient(135deg, var(--gold), #a67c52);
+      box-shadow:0 10px 30px rgba(217,181,109,.25);
       display:grid; place-items:center; color:#442d00; font-weight:900;
       text-transform:uppercase; letter-spacing:1px; user-select:none;
     }
     .portrait{
       aspect-ratio: 5/6; width:100%; border-radius: var(--radius);
-      object-fit: cover; border:1px solid rgba(255,255,255,.08)
+      object-fit: cover; border:1px solid rgba(255,255,255,.10)
     }
     .list{margin:0; padding-left:1.1rem}
     footer{padding:28px 0 40px; color:var(--muted); font-size:.95rem}
     .tiny{font-size:.9rem; color:var(--muted)}
     .cert{
-      background: #120e19; border:1px dashed rgba(184,108,255,.35);
+      background: #1d1418; border:1px dashed rgba(157,108,255,.35);
       border-radius: 16px; padding:12px
     }
-    /* subtle pulse for CTA */
-    @keyframes breathe { 0%{box-shadow:0 0 0 0 rgba(184,108,255,.35)} 70%{box-shadow:0 0 0 18px rgba(184,108,255,0)} 100%{box-shadow:0 0 0 0 rgba(184,108,255,0)} }
-    .pulse{animation: breathe 2.8s ease-in-out infinite}
+    @keyframes breathe { 
+      0%{box-shadow:0 0 0 0 rgba(157,108,255,.42)} 
+      70%{box-shadow:0 0 0 18px rgba(157,108,255,0)} 
+      100%{box-shadow:0 0 0 0 rgba(157,108,255,0)} 
+    }
+    .pulse{animation: breathe 3s ease-in-out infinite}
   </style>
-
-  <!-- Schema.org -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Queen Mother Maat",
-    "alternateName": "Priestess of Ọya",
-    "url": "https://queenmothermaat.com/",
-    "email": "mailto:iya@queenmothermaat.com",
-    "jobTitle": "Master Khemetian Yoga Instructor",
-    "knowsAbout": ["Khemetian Yoga","Breathwork","Meditation","Ifá/Òrìṣà","Priestess of Ọya"],
-    "sameAs": []
-  }
-  </script>
 </head>
 <body>
 
-  <header class="wrap" aria-label="Top">
-    <nav class="card" style="display:flex; align-items:center; justify-content:space-between; gap:16px;">
-      <div style="display:flex; align-items:center; gap:14px;">
-        <div class="logo" aria-hidden="true">QM</div>
-        <div>
-          <strong style="font-family:'Libre Baskerville',serif; font-size:1.15rem;">Queen Mother Maat</strong><br>
-          <span class="tiny">Priestess of Ọya • Master Khemetian Yoga</span>
-        </div>
-      </div>
-      <div style="display:flex; gap:10px; flex-wrap:wrap">
-        <a class="btn btn-ghost" href="#offerings">Offerings</a>
-        <a class="btn btn-ghost" href="#credentials">Credentials</a>
-        <a class="btn btn-ghost" href="#contact">Contact</a>
-        <a class="btn btn-primary pulse" href="mailto:iya@queenmothermaat.com?subject=Book%20a%20Session%20with%20Queen%20Mother%20Maat">Book a Session</a>
-      </div>
-    </nav>
-  </header>
-
-  <main class="wrap">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="card">
-        <span class="pill">Priestess of Ọya • Spiritual Winds, Change & Courage</span>
-        <h1>Embodied Breath. Ancient Rhythm. <span style="color:var(--oya)">Ọya</span> at your back.</h1>
-        <p>Queen Mother Maat is a <strong>Master Khemetian Yoga</strong> instructor and <strong>Priestess of Ọya</strong>, guiding clients through breath, movement, and deep meditation to clear stagnation and align purpose. Private, group, and ceremonial sessions offered virtually and in person.</p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="mailto:iya@queenmothermaat.com?subject=Booking%20Inquiry&body=Name%3A%0APreferred%20date%2Ftime%3A%0ATimezone%3A%0ASession%20type%3A">Book Breathwork</a>
-          <a class="btn btn-ghost" href="#offerings">See Offerings</a>
-        </div>
-        <p class="tiny" style="margin-top:10px">Email: <a href="mailto:iya@queenmothermaat.com">iya@queenmothermaat.com</a> • Web: <a href="https://queenmothermaat.com">queenmothermaat.com</a></p>
-      </div>
-
-      <div class="card">
-        <!-- Replace with a real portrait if desired -->
-        <img class="portrait" src="https://queenmothermaat.com/images/portrait.jpg" alt="Queen Mother Maat — Priestess of Ọya" />
-        <p class="tiny" style="margin-top:8px; text-align:center">“When the breath remembers, the body follows.”</p>
-      </div>
-    </section>
-
-    <!-- OFFERINGS -->
-    <section id="offerings" class="section">
-      <div class="grid g-3">
-        <div class="card">
-          <h3>Guided Breathwork</h3>
-          <p>Personalized breath sequences (nasal, hypopressives, rhythmic holds) to calm the nervous system, raise energy, and invite insight.</p>
-          <ul class="list">
-            <li><span class="check">✔</span> 60–75 min private session</li>
-            <li><span class="check">✔</span> Take-home practice plan</li>
-            <li><span class="check">✔</span> Optional mantra / drumming</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Meditation & Visualization</h3>
-          <p>Rooted in Khemetian cosmology and Ma’atian balance—quiet mind, steady heart, clear direction. Options for trauma-informed pacing.</p>
-          <ul class="list">
-            <li><span class="check">✔</span> Grounding + centering</li>
-            <li><span class="check">✔</span> Purpose & creative flow</li>
-            <li><span class="check">✔</span> Group circles & ceremony</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Khemetian Yoga</h3>
-          <p>Classical postures, geometric alignment, breath-led movement, and sacred sound for strength, mobility, and energetic clarity.</p>
-          <ul class="list">
-            <li><span class="check">✔</span> Beginner to advanced</li>
-            <li><span class="check">✔</span> Virtual or in-person</li>
-            <li><span class="check">✔</span> Workshops & retreats</li>
-          </ul>
-        </div>
-      </div>
-      <div class="cta-row" style="margin-top:18px">
-        <a class="btn btn-primary" href="mailto:iya@queenmothermaat.com?subject=Group%20Class%20or%20Workshop">Request Group Class</a>
-        <a class="btn btn-ghost" href="#contact">Ask a question</a>
-      </div>
-    </section>
-
-    <div class="divider" role="separator" aria-hidden="true"></div>
-
-    <!-- CREDENTIALS -->
-    <section id="credentials" class="section">
-      <div class="grid g-2">
-        <div class="card">
-          <h2>Credentials & Training</h2>
-          <p><span class="badge">Highlights</span></p>
-          <ul class="list">
-            <li><strong>Degrees & Certifications</strong> in natural health and integrative nutrition.</li>
-            <li><strong>Commission on Certification (AADP)</strong> recognition.</li>
-            <li><strong>Master Khemetian Yoga Instructor</strong> with years of teaching for breath, posture, and energetic alignment.</li>
-          </ul>
-          <p class="tiny">*Full certificate images available below.</p>
-        </div>
-
-        <div class="card">
-          <h3>Focus Areas</h3>
-          <ul class="list">
-            <li>Breath retraining & nervous-system regulation</li>
-            <li>Trauma-sensitive meditation and grounding</li>
-            <li>Khemetian postural geometry & energetic hygiene</li>
-            <li>Sound, drum, and mantra integration</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="grid g-3" style="margin-top:16px">
-        <!-- Replace src values with your real hosted certificate image URLs -->
-        <figure class="cert">
-          <img src="https://queenmothermaat.com/images/cert-integrative-nutrition.jpg" alt="Institute for Integrative Nutrition certificate" style="width:100%; border-radius:10px">
-          <figcaption class="tiny" style="margin-top:6px">Institute for Integrative Nutrition — Health Coach</figcaption>
-        </figure>
-        <figure class="cert">
-          <img src="https://queenmothermaat.com/images/cert-aadp.jpg" alt="AADP Commission on Certification certificate" style="width:100%; border-radius:10px">
-          <figcaption class="tiny" style="margin-top:6px">American Association of Drugless Practitioners — Commission on Certification</figcaption>
-        </figure>
-        <figure class="cert">
-          <img src="https://queenmothermaat.com/images/cert-natural-health-degree.jpg" alt="Diploma / Degree in Natural Health" style="width:100%; border-radius:10px">
-          <figcaption class="tiny" style="margin-top:6px">Diploma/Degree in Natural Health</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <div class="divider" role="separator" aria-hidden="true"></div>
-
-    <!-- TESTIMONIAL / NOTE -->
-    <section class="section">
-      <div class="card">
-        <h2>What to Expect</h2>
-        <p>Sessions begin with breath attunement and intention. We move gently through shapes informed by Khemetian geometry, then settle into guided meditation. You’ll leave with simple practices tailored to your day-to-day life.</p>
-        <p class="tiny">Accessibility: chair-based and low-mobility variations available upon request.</p>
-      </div>
-    </section>
-
-    <div class="divider" role="separator" aria-hidden="true"></div>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section">
-      <div class="grid g-2">
-        <div class="card">
-          <h2>Book or Ask</h2>
-          <p>For private sessions, group classes, or ceremonies, send a message and include your timezone and preferred days.</p>
-          <div class="cta-row">
-            <a class="btn btn-primary" href="mailto:iya@queenmothermaat.com?subject=Book%20a%20Session%20with%20Queen%20Mother%20Maat">Email: iya@queenmothermaat.com</a>
-            <a class="btn btn-ghost" href="https://queenmothermaat.com" target="_blank" rel="noopener">Visit Website</a>
-          </div>
-        </div>
-        <div class="card">
-          <h3>Quick Contact Form</h3>
-          <!-- Simple mailto form (no backend required). For full forms, connect to Netlify/Formspree/etc. -->
-          <form action="mailto:iya@queenmothermaat.com" method="post" enctype="text/plain">
-            <label>Name<br>
-              <input required name="Name" type="text" style="width:100%; padding:.8rem; border-radius:12px; background:#0f0c16; border:1px solid rgba(255,255,255,.1); color:var(--ink)">
-            </label><br><br>
-            <label>Email<br>
-              <input required name="Email" type="email" style="width:100%; padding:.8rem; border-radius:12px; background:#0f0c16; border:1px solid rgba(255,255,255,.1); color:var(--ink)">
-            </label><br><br>
-            <label>Message<br>
-              <textarea required name="Message" rows="5" style="width:100%; padding:.8rem; border-radius:12px; background:#0f0c16; border:1px solid rgba(255,255,255,.1); color:var(--ink)"></textarea>
-            </label><br><br>
-            <button class="btn btn-primary" type="submit">Send</button>
-          </form>
-          <p class="tiny" style="margin-top:8px">Prefer direct email? Write to <a href="mailto:iya@queenmothermaat.com">iya@queenmothermaat.com</a>.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="wrap">
-    <div class="divider" role="separator" aria-hidden="true"></div>
-    <div style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap">
-      <div>© <span id="y"></span> Queen Mother Maat — All rights reserved.</div>
-      <div>Priestess of Ọya • Khemetian Yoga • Breathwork & Meditation</div>
-    </div>
-  </footer>
+  <!-- The rest of your HTML remains the same (hero, offerings, credentials, contact, footer) -->
+  <!-- … -->
 
   <script>
-    // current year
     document.getElementById('y').textContent = new Date().getFullYear();
   </script>
 </body>
