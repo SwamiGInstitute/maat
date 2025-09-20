@@ -3,127 +3,92 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#0e0b12" />
-  <meta name="color-scheme" content="dark" />
+  <meta name="theme-color" content="#d4bfa9" />
+  <meta name="color-scheme" content="light" />
   <title>Queen Mother Maat — Priestess of Ọya | Khemetian Yoga, Breathwork & Guided Meditations</title>
   <meta name="description" content="Queen Mother Maat — Priestess of Ọya. Master Khemetian Yoga instructor offering guided breathing, meditation, and spiritual alignment sessions. Serving in-person and virtual communities. Email: iya@queenmothermaat.com" />
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
 
+  <!-- Open Graph -->
+  <meta property="og:title" content="Queen Mother Maat — Priestess of Ọya" />
+  <meta property="og:description" content="Master Khemetian Yoga instructor offering guided breathing, meditation, and spiritual alignment sessions." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://queenmothermaat.com" />
+  <meta property="og:image" content="https://queenmothermaat.com/queenmothermaat.jpg" />
+
   <style>
-    :root{
-      --bg:#1a1310;               /* deep earthy brown */
-      --panel:#22191c;            /* panel with slight purple */
-      --ink:#f5f2fa;
-      --muted:#b9aeb7;
-      --accent:#9d6cff;           /* purple accent */
-      --accent-soft:rgba(157,108,255,.18);
-      --oya:#b34d5d;              /* earthy crimson */
-      --gold:#d9b56d;             /* earthy gold accent */
-      --radius:22px;
-      --shadow:0 10px 30px rgba(0,0,0,.35);
+    :root {
+      --bg1: #f6efe9;   /* light beige */
+      --bg2: #e5d4ef;   /* soft lavender/purple */
+      --text: #2b1b17;  /* deep brown */
+      --accent: #8b5fbf; /* purple accent */
+      --card-bg: rgba(255,255,255,0.88);
     }
-    *{box-sizing:border-box}
-    html,body{scroll-behavior:smooth}
-    body{
-      margin:0;
-      /* 🌌 Brown + Purple aurora background */
-      background:
-        radial-gradient(1200px 600px at 15% -10%, rgba(157,108,255,.18), transparent 60%),
-        radial-gradient(1000px 500px at 90% 0%, rgba(139,69,19,.20), transparent 55%),
-        radial-gradient(900px 460px at 50% 100%, rgba(205,133,63,.18), transparent 70%),
-        linear-gradient(180deg, #2a1e24, #1a1310 85%);
-      color:var(--ink);
-      font:400 16px/1.6 Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
-      letter-spacing:.2px;
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      background: linear-gradient(135deg, var(--bg1), var(--bg2));
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
     }
-    h1,h2,h3{font-family:"Libre Baskerville", Georgia, serif; margin:0 0 .6rem}
-    h1{font-size: clamp(30px, 4.8vw, 54px); line-height:1.15}
-    h2{font-size: clamp(22px, 3vw, 34px)}
-    h3{font-size: clamp(18px, 2.1vw, 22px)}
-    p{margin:.15rem 0 1rem}
-    a{color:var(--accent); text-decoration:none}
-    a:hover{text-decoration:underline}
-    .wrap{max-width:1100px; margin:0 auto; padding:22px}
-    .hero{
-      display:grid; gap:26px; align-items:center;
-      grid-template-columns: 1.1fr .9fr;
-      padding: clamp(30px, 6vw, 60px) 0 26px;
+
+    h1, h2 {
+      font-family: 'Libre Baskerville', serif;
+      color: var(--accent);
+      margin: 0.2em 0;
     }
-    @media (max-width: 900px){ .hero{grid-template-columns: 1fr} }
-    .card{
-      background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.00)) , var(--panel);
-      border:1px solid rgba(255,255,255,.08);
-      box-shadow: var(--shadow);
-      border-radius: var(--radius);
-      padding: clamp(18px, 3.2vw, 28px);
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 20px;
+      padding: 2rem;
+      max-width: 750px;
+      margin: 1rem auto;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      text-align: center;
     }
-    .pill{
-      display:inline-flex; align-items:center; gap:.5rem;
-      padding:.4rem .8rem; border-radius:999px;
-      background:linear-gradient(180deg, rgba(139,69,19,.25), rgba(157,108,255,.15));
-      color:var(--ink); font-weight:700; font-size:.9rem;
-      border:1px solid rgba(157,108,255,.45);
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
     }
-    .cta-row{display:flex; gap:12px; flex-wrap:wrap; margin-top:16px}
-    .btn{
-      display:inline-flex; align-items:center; justify-content:center; gap:.6rem;
-      padding:.9rem 1.1rem; border-radius:14px; font-weight:800; letter-spacing:.3px;
-      border:1px solid rgba(255,255,255,.12); backdrop-filter: blur(6px);
-      transition: transform .12s ease, box-shadow .12s ease, background-color .12s ease;
-      cursor:pointer; text-decoration:none;
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
     }
-    .btn-primary{
-      background: linear-gradient(180deg, #9d6cff, #633b99);
-      color:white;
-      border-color: rgba(0,0,0,.25);
-      box-shadow: 0 10px 22px rgba(157,108,255,.25);
+
+    a:hover {
+      text-decoration: underline;
     }
-    .btn-primary:hover{transform: translateY(-1px)}
-    .btn-ghost{background:rgba(255,255,255,.07); color:var(--ink)}
-    .grid{display:grid; gap:18px}
-    .g-3{grid-template-columns: repeat(3, 1fr)}
-    .g-2{grid-template-columns: repeat(2, 1fr)}
-    @media (max-width: 900px){ .g-3,.g-2{grid-template-columns: 1fr} }
-    .badge{font-weight:800; color:var(--gold)}
-    .check{color:#9dffb0}
-    .section{padding: 18px 0 10px}
-    .divider{height:1px; background:linear-gradient(90deg, transparent, rgba(255,255,255,.14), transparent); margin:32px 0}
-    .logo{
-      width:82px; height:82px; border-radius:50%;
-      background:
-        radial-gradient(60% 60% at 40% 35%, rgba(255,255,255,.28), rgba(255,255,255,.08)),
-        linear-gradient(135deg, var(--gold), #a67c52);
-      box-shadow:0 10px 30px rgba(217,181,109,.25);
-      display:grid; place-items:center; color:#442d00; font-weight:900;
-      text-transform:uppercase; letter-spacing:1px; user-select:none;
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      opacity: 0.7;
     }
-    .portrait{
-      aspect-ratio: 5/6; width:100%; border-radius: var(--radius);
-      object-fit: cover; border:1px solid rgba(255,255,255,.10)
-    }
-    .list{margin:0; padding-left:1.1rem}
-    footer{padding:28px 0 40px; color:var(--muted); font-size:.95rem}
-    .tiny{font-size:.9rem; color:var(--muted)}
-    .cert{
-      background: #1d1418; border:1px dashed rgba(157,108,255,.35);
-      border-radius: 16px; padding:12px
-    }
-    @keyframes breathe { 
-      0%{box-shadow:0 0 0 0 rgba(157,108,255,.42)} 
-      70%{box-shadow:0 0 0 18px rgba(157,108,255,0)} 
-      100%{box-shadow:0 0 0 0 rgba(157,108,255,0)} 
-    }
-    .pulse{animation: breathe 3s ease-in-out infinite}
   </style>
 </head>
 <body>
+  <div class="card">
+    <h1>Queen Mother Maat</h1>
+    <h2>Priestess of Ọya</h2>
+    <p>Master Khemetian Yoga instructor offering guided breathing, meditation, and spiritual alignment sessions.</p>
+    <p>Serving in-person and virtual communities.</p>
+    <p>Email: <a href="mailto:iya@queenmothermaat.com">iya@queenmothermaat.com</a></p>
+  </div>
 
-  <!-- The rest of your HTML remains the same (hero, offerings, credentials, contact, footer) -->
-  <!-- … -->
-
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+  <footer>
+    <p>© 2025 Queen Mother Maat — All Rights Reserved</p>
+  </footer>
 </body>
 </html>
